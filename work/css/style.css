@@ -1,10 +1,6 @@
 @charset "UTF-8";
 
-/* 共通 */
-
-input,
-select,
-button {
+input, select, button {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -20,7 +16,7 @@ button {
 
 .wrapper {
   width: 100%;
-  background: #cff1ff;
+  background-color: #cff1ff;
 }
 
 .inner {
@@ -42,11 +38,7 @@ button {
   margin-top: 25px;
 }
 
-.personal-content,
-.account-content,
-.contact-content,
-.subscription__content,
-.submit-content {
+.personal-content, .account-content, .contact-content, .subscription__content, .submit-content {
   margin-top: 50px;
 }
 
@@ -61,7 +53,7 @@ button {
 }
 
 .form-container {
-  background: #ecfaff;
+  background-color: #ecfaff;
   padding: 50px;
   margin-top: 60px;
 }
@@ -70,8 +62,6 @@ button {
   font-size: 24px;
   text-align: center;
 }
-
-/* プルダウンメニュー */
 
 .input-area {
   width: 100%;
@@ -90,8 +80,7 @@ button {
   box-shadow: 0px 0px 0px 3px rgba(1, 90, 191, 0.1);
 }
 
-.select-area,
-.gender-area {
+.select-area, .gender-area {
   margin-top: 6px;
 }
 
@@ -113,8 +102,6 @@ button {
   transform: rotate(45deg);
 }
 
-/* 性別 */
-
 .gender-element {
   margin-left: 10px;
 }
@@ -134,7 +121,7 @@ button {
   content: "";
   position: absolute;
   top: 50%;
-  left: 0px;
+  left: 0;
   width: 14px;
   height: 14px;
   background-color: #fbfbfb;
@@ -143,7 +130,8 @@ button {
   transform: translateY(-50%);
 }
 
-.gender-content:checked+span:after {
+.gender-content:checked +
+span:after {
   content: "";
   position: absolute;
   background-color: #017cbf;
@@ -154,8 +142,6 @@ button {
   border-radius: 50%;
   transform: translateY(-50%);
 }
-
-/* 購読 */
 
 .subscription-label {
   position: relative;
@@ -174,7 +160,7 @@ button {
   margin-top: -8px;
 }
 
-.subscription-unit input:checked+.subscription-label:after {
+.subscription-unit input:checked + .subscription-label:after {
   content: "";
   position: absolute;
   border-right: 3px solid #0140bf;
@@ -186,8 +172,6 @@ button {
   margin-top: -11px;
   transform: rotate(45deg);
 }
-
-/* アカウント作成ボタン */
 
 .btn {
   cursor: pointer;
@@ -224,3 +208,5 @@ button {
   color: #0170bf;
   text-decoration: none;
 }
+
+
